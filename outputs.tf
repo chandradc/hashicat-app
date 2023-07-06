@@ -8,3 +8,6 @@ output "catapp_url" {
 output "catapp_ip" {
   value = "http://${aws_eip.hashicat.public_ip}"
 }
+output "catapp_id" {
+  value = aws_instance.hashicat.id
+}
